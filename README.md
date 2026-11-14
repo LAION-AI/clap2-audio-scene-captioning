@@ -4,7 +4,7 @@
 
 This library combines [CLAP2](https://github.com/LAION-AI/clap2) audio embeddings, contiguous temporal clustering, and exact nearest-neighbor retrieval. It returns existing descriptions from a fixed caption library; it does not ask a language model to generate captions at inference time.
 
-The default pipeline mirrors the configuration used in the [interactive CLAP2 demo](https://huggingface.co/spaces/TTS-AGI/clap2-live-taxonomy): **CLAP2 M · Luna + 100k · 2-second windows · 200-millisecond stride · Top 5 · adjacent hierarchical segmentation · minimum segment duration of 1 second**. Prediction smoothing uses a centered 1-second moving average. All of these settings are configurable.
+The library default is: **CLAP2 M · Luna + 100k · 2-second windows · 200-millisecond stride · Top 5 · adjacent hierarchical segmentation · minimum segment duration of 1 second**. Prediction smoothing uses a centered 1-second moving average. All of these settings are configurable. The [interactive live demo](https://huggingface.co/spaces/TTS-AGI/clap2-live-taxonomy) now starts with **CLAP2 L** and lets you switch between all five model sizes; it shares the same timing and segmentation defaults.
 
 ![Actual CLAP2 M results for the included synthetic example](docs/assets/example-timeline.svg)
 
