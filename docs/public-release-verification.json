@@ -1,0 +1,96 @@
+{
+  "repository": "LAION-AI/clap2-audio-scene-captioning",
+  "release": "v1.0.0",
+  "matrices": [
+    {
+      "file": "clap2-xxs-luna-10k.npy",
+      "bytes": 6458496,
+      "sha256": "27699e8ea4c3c1f2d19a402aac169c6beedacb66d79e5d7ffcb51be7f497a4ad",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-xxs-luna-50k.npy",
+      "bytes": 24375808,
+      "sha256": "211e031f6fa0f53dd9903edb10d783102a2cd45f05049e51dc00394fe4b85945",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-xxs-luna-100k.npy",
+      "bytes": 46771776,
+      "sha256": "fe4ea577b0c4386aa0e25384e2388924e1dd4c3e207388b52220adc9a4de506c",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-xs-luna-10k.npy",
+      "bytes": 9226368,
+      "sha256": "7f29d6f01f0b14a9741c7c252e359f493e5bb9422ac62af682dca57a753fda4d",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-xs-luna-50k.npy",
+      "bytes": 34822528,
+      "sha256": "3b7c1db233ef4485a1fc638847ee07ff1e7821503c346fb9f62b50edf6a2764f",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-xs-luna-100k.npy",
+      "bytes": 66816768,
+      "sha256": "8ee792b51bc03d71c46384fd482064506e49e3f0dbcc65287111bcdb5e4c6ba7",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-s-luna-10k.npy",
+      "bytes": 14762112,
+      "sha256": "f2b1602b51479400cfbb3991609235a38fbb17fc83dc89f9309f3de30ee4725c",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-s-luna-50k.npy",
+      "bytes": 55715968,
+      "sha256": "db9bf9e918c6bc3a7451190a7f2c2ffe0bc26974f7dbcfe92eecde7f93f15da3",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-s-luna-100k.npy",
+      "bytes": 106906752,
+      "sha256": "30ba589a1291f4b36379f4555b6cc3ad6d7db1f411312f2659ea41f8efa2beed",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-m-luna-10k.npy",
+      "bytes": 18452608,
+      "sha256": "9345ee1b6d46e3aab679702560fc57a05b69643b96f2124ef0606514c4d24f8c",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-m-luna-50k.npy",
+      "bytes": 69644928,
+      "sha256": "18aeb85da49df9dc7894da49caf8abf40927124373f519db327ddad6fc16f4f9",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-m-luna-100k.npy",
+      "bytes": 133633408,
+      "sha256": "114382d02b3ae38bc62a389037e703f4b4b14067314e90b1213c71c9875f18f8",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-l-luna-10k.npy",
+      "bytes": 27678848,
+      "sha256": "4d755f5e776999a91e3b79acca530f7f2a81913edb97be50b4d2e31c5c657f8b",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-l-luna-50k.npy",
+      "bytes": 104467328,
+      "sha256": "43a9a13c169506e57fc921be6007890ca3a6ecb702f03277f762c25d3cb7688b",
+      "anonymous_download_verified": true
+    },
+    {
+      "file": "clap2-l-luna-100k.npy",
+      "bytes": 200450048,
+      "sha256": "ee86911f75c3904732b61231023c28af99a183c7095911e00be3eb9c37fcc45c",
+      "anonymous_download_verified": true
+    }
+  ]
+}

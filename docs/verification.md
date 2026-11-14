@@ -43,3 +43,9 @@ The audio example is synthetic and deliberately simple. Passing these checks est
 ## Ten-minute recording
 
 The complete 600-second synthetic test produced **3,000 time bins**, **2,991 overlapping windows**, five segments covering the full duration, and Top-5 matches in every bin. On the A100 test run, after model/index loading, audio decoding and encoding took **5.99 s** and retrieval plus segmentation took **1.54 s**, for **7.53 s total**. This is one measured synthetic workload, not a general latency guarantee. See [`long-audio-verification.json`](long-audio-verification.json).
+
+## Public release and installed package
+
+All **15 public GitHub release matrices** were downloaded anonymously and hashed end to end; sizes and SHA-256 values match the manifest. See [`public-release-verification.json`](public-release-verification.json).
+
+The built wheel was installed into a separate directory and run outside the checkout. It successfully downloaded its index without authentication, ran XXS CPU inference on one file and an ordered two-file batch, served API documentation and health metadata, and rejected invalid audio. See [`installed-package-verification.json`](installed-package-verification.json).

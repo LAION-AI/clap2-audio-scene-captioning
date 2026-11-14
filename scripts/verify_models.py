@@ -19,7 +19,7 @@ def main():
         engine = SceneCaptioner(
             model,
             index_path=ROOT / f"artifacts/clap2-{model}-luna-100k.npy",
-            device=os.getenv("CLAP2_TEST_DEVICE", "cuda:6"),
+            device=os.getenv("CLAP2_TEST_DEVICE", "cuda"),
             model_cache_dir=os.getenv("CLAP2_MODEL_CACHE"),
         )
         cfg = AnalysisConfig()

@@ -1,0 +1,11 @@
+{
+  "installed_wheel": true,
+  "ran_outside_checkout": true,
+  "anonymous_index_download": true,
+  "cpu_inference": true,
+  "single_and_ordered_batch": true,
+  "api_docs_health_invalid_audio": true,
+  "model": "xxs",
+  "candidates": 14416,
+  "bins": 60
+}
