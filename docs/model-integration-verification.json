@@ -1,0 +1,57 @@
+[
+  {
+    "model": "xxs",
+    "dimension": 224,
+    "sliding_bins": 60,
+    "contextual_bins": 60,
+    "default_segments": 5,
+    "fresh_segment_encoding": true,
+    "all_three_indexes_verified": true,
+    "mmap_gpu_top3_agreement": true,
+    "wall_seconds": 11.34274855593685
+  },
+  {
+    "model": "xs",
+    "dimension": 320,
+    "sliding_bins": 60,
+    "contextual_bins": 60,
+    "default_segments": 5,
+    "fresh_segment_encoding": true,
+    "all_three_indexes_verified": true,
+    "mmap_gpu_top3_agreement": true,
+    "wall_seconds": 6.268170544062741
+  },
+  {
+    "model": "s",
+    "dimension": 512,
+    "sliding_bins": 60,
+    "contextual_bins": 60,
+    "default_segments": 4,
+    "fresh_segment_encoding": true,
+    "all_three_indexes_verified": true,
+    "mmap_gpu_top3_agreement": true,
+    "wall_seconds": 8.521982119069435
+  },
+  {
+    "model": "m",
+    "dimension": 640,
+    "sliding_bins": 60,
+    "contextual_bins": 60,
+    "default_segments": 5,
+    "fresh_segment_encoding": true,
+    "all_three_indexes_verified": true,
+    "mmap_gpu_top3_agreement": true,
+    "wall_seconds": 10.918436235981062
+  },
+  {
+    "model": "l",
+    "dimension": 960,
+    "sliding_bins": 60,
+    "contextual_bins": 60,
+    "default_segments": 5,
+    "fresh_segment_encoding": true,
+    "all_three_indexes_verified": true,
+    "mmap_gpu_top3_agreement": true,
+    "wall_seconds": 14.946054681902751
+  }
+]

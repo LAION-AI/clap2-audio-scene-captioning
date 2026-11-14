@@ -1,0 +1,27 @@
+{
+  "xxs": {
+    "repo": "laion/clap2-xxs-audioxl-s1B",
+    "revision": "8ffad49f4134b11df3d80c21aceb556f3dfcc511",
+    "dimension": 224
+  },
+  "xs": {
+    "repo": "laion/clap2-xs-audioxl-s1B",
+    "revision": "4ad2cb10836cd578febbad6a304408dba081a3c6",
+    "dimension": 320
+  },
+  "s": {
+    "repo": "laion/clap2-small-audioxl-s1B",
+    "revision": "56bdd36775531b9b22ee7681437da32830bb50dd",
+    "dimension": 512
+  },
+  "m": {
+    "repo": "laion/clap2-medium-audioxl-s1B",
+    "revision": "8e299e83c08a291711490105e82a345abadb5cdb",
+    "dimension": 640
+  },
+  "l": {
+    "repo": "laion/clap2-large-audioxl-s1B",
+    "revision": "1fc47b9ed155a3da812a4976b07ae83ce0d26183",
+    "dimension": 960
+  }
+}

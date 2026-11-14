@@ -1,0 +1,8 @@
+{
+  "desktop_and_mobile": true,
+  "actual_audio_playback": true,
+  "seek_updates_time_and_segment_matches": true,
+  "json_download": true,
+  "no_browser_errors": true,
+  "browser": "Chromium headless"
+}

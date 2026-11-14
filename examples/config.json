@@ -1,0 +1,13 @@
+{
+  "window_seconds": 2.0,
+  "stride_seconds": 0.2,
+  "feature_method": "sliding",
+  "smoothing": "moving_average",
+  "smoothing_seconds": 1.0,
+  "top_n": 5,
+  "segmentation": {
+    "method": "hierarchical",
+    "target_segments": 5,
+    "min_segment_seconds": 1.0
+  }
+}

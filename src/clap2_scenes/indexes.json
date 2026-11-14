@@ -1,0 +1,249 @@
+{
+  "version": "v1.0.0",
+  "source_repository": "laion/laion-audio-xl-caption-cluster-library",
+  "source_revision": "e4407f1f39ecc05425c5664bb68d6d9a3fb0081c",
+  "training_model": "m",
+  "training_rows": 100000000,
+  "luna_nodes": 4416,
+  "catalogs": {
+    "10k": {
+      "rows": 14416,
+      "archetypes": 10000,
+      "requested_clusters": 10000,
+      "missing_caption_clusters_omitted": [],
+      "file": "data/candidates/luna-10k.jsonl.gz",
+      "sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+      "ordered_ids_sha256": "7ddee1028a40a8e33f66c2ce0092eb52426ea5140b20edef627b22286fa4abdf",
+      "source_file": "indexes/subset-100m/m/luna-large10k/nodes.json",
+      "training_rows": 100000000,
+      "selection_model": "m",
+      "source_repository": "laion/laion-audio-xl-caption-cluster-library",
+      "source_revision": "e4407f1f39ecc05425c5664bb68d6d9a3fb0081c"
+    },
+    "50k": {
+      "rows": 54410,
+      "archetypes": 49994,
+      "requested_clusters": 50000,
+      "missing_caption_clusters_omitted": [
+        13207,
+        15786,
+        19089,
+        24179,
+        32329,
+        44150
+      ],
+      "file": "data/candidates/luna-50k.jsonl.gz",
+      "sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+      "ordered_ids_sha256": "c77cf516899f6aa757ff8788ea313b387b1304ca54b9ca4c2da6b578cc0a66a6",
+      "source_file": "subset-100m/m/k050000/representatives.parquet",
+      "training_rows": 100000000,
+      "selection_model": "m",
+      "source_repository": "laion/laion-audio-xl-caption-cluster-library",
+      "source_revision": "e4407f1f39ecc05425c5664bb68d6d9a3fb0081c"
+    },
+    "100k": {
+      "rows": 104401,
+      "archetypes": 99985,
+      "requested_clusters": 100000,
+      "missing_caption_clusters_omitted": [
+        7514,
+        9106,
+        10742,
+        19409,
+        24704,
+        25174,
+        28227,
+        40567,
+        43295,
+        47226,
+        48669,
+        53068,
+        71677,
+        80098,
+        97670
+      ],
+      "file": "data/candidates/luna-100k.jsonl.gz",
+      "sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+      "ordered_ids_sha256": "1bd1cbe978ef054f81fa25f27c54d67c74c50840e5aa163e1a1005179876ec81",
+      "source_file": "indexes/subset-100m/m/luna-large100k/nodes.json",
+      "training_rows": 100000000,
+      "selection_model": "m",
+      "source_repository": "laion/laion-audio-xl-caption-cluster-library",
+      "source_revision": "e4407f1f39ecc05425c5664bb68d6d9a3fb0081c"
+    }
+  },
+  "models": {
+    "xxs": {
+      "repo": "laion/clap2-xxs-audioxl-s1B",
+      "revision": "8ffad49f4134b11df3d80c21aceb556f3dfcc511",
+      "dimension": 224
+    },
+    "xs": {
+      "repo": "laion/clap2-xs-audioxl-s1B",
+      "revision": "4ad2cb10836cd578febbad6a304408dba081a3c6",
+      "dimension": 320
+    },
+    "s": {
+      "repo": "laion/clap2-small-audioxl-s1B",
+      "revision": "56bdd36775531b9b22ee7681437da32830bb50dd",
+      "dimension": 512
+    },
+    "m": {
+      "repo": "laion/clap2-medium-audioxl-s1B",
+      "revision": "8e299e83c08a291711490105e82a345abadb5cdb",
+      "dimension": 640
+    },
+    "l": {
+      "repo": "laion/clap2-large-audioxl-s1B",
+      "revision": "1fc47b9ed155a3da812a4976b07ae83ce0d26183",
+      "dimension": 960
+    }
+  },
+  "embeddings": {
+    "xxs": {
+      "10k": {
+        "file": "clap2-xxs-luna-10k.npy",
+        "sha256": "27699e8ea4c3c1f2d19a402aac169c6beedacb66d79e5d7ffcb51be7f497a4ad",
+        "bytes": 6458496,
+        "rows": 14416,
+        "dimension": 224,
+        "catalog_sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-xxs-luna-10k.npy"
+      },
+      "50k": {
+        "file": "clap2-xxs-luna-50k.npy",
+        "sha256": "211e031f6fa0f53dd9903edb10d783102a2cd45f05049e51dc00394fe4b85945",
+        "bytes": 24375808,
+        "rows": 54410,
+        "dimension": 224,
+        "catalog_sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-xxs-luna-50k.npy"
+      },
+      "100k": {
+        "file": "clap2-xxs-luna-100k.npy",
+        "sha256": "fe4ea577b0c4386aa0e25384e2388924e1dd4c3e207388b52220adc9a4de506c",
+        "bytes": 46771776,
+        "rows": 104401,
+        "dimension": 224,
+        "catalog_sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-xxs-luna-100k.npy"
+      }
+    },
+    "xs": {
+      "10k": {
+        "file": "clap2-xs-luna-10k.npy",
+        "sha256": "7f29d6f01f0b14a9741c7c252e359f493e5bb9422ac62af682dca57a753fda4d",
+        "bytes": 9226368,
+        "rows": 14416,
+        "dimension": 320,
+        "catalog_sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-xs-luna-10k.npy"
+      },
+      "50k": {
+        "file": "clap2-xs-luna-50k.npy",
+        "sha256": "3b7c1db233ef4485a1fc638847ee07ff1e7821503c346fb9f62b50edf6a2764f",
+        "bytes": 34822528,
+        "rows": 54410,
+        "dimension": 320,
+        "catalog_sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-xs-luna-50k.npy"
+      },
+      "100k": {
+        "file": "clap2-xs-luna-100k.npy",
+        "sha256": "8ee792b51bc03d71c46384fd482064506e49e3f0dbcc65287111bcdb5e4c6ba7",
+        "bytes": 66816768,
+        "rows": 104401,
+        "dimension": 320,
+        "catalog_sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-xs-luna-100k.npy"
+      }
+    },
+    "s": {
+      "10k": {
+        "file": "clap2-s-luna-10k.npy",
+        "sha256": "f2b1602b51479400cfbb3991609235a38fbb17fc83dc89f9309f3de30ee4725c",
+        "bytes": 14762112,
+        "rows": 14416,
+        "dimension": 512,
+        "catalog_sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-s-luna-10k.npy"
+      },
+      "50k": {
+        "file": "clap2-s-luna-50k.npy",
+        "sha256": "db9bf9e918c6bc3a7451190a7f2c2ffe0bc26974f7dbcfe92eecde7f93f15da3",
+        "bytes": 55715968,
+        "rows": 54410,
+        "dimension": 512,
+        "catalog_sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-s-luna-50k.npy"
+      },
+      "100k": {
+        "file": "clap2-s-luna-100k.npy",
+        "sha256": "30ba589a1291f4b36379f4555b6cc3ad6d7db1f411312f2659ea41f8efa2beed",
+        "bytes": 106906752,
+        "rows": 104401,
+        "dimension": 512,
+        "catalog_sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-s-luna-100k.npy"
+      }
+    },
+    "m": {
+      "10k": {
+        "file": "clap2-m-luna-10k.npy",
+        "sha256": "9345ee1b6d46e3aab679702560fc57a05b69643b96f2124ef0606514c4d24f8c",
+        "bytes": 18452608,
+        "rows": 14416,
+        "dimension": 640,
+        "catalog_sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-m-luna-10k.npy"
+      },
+      "50k": {
+        "file": "clap2-m-luna-50k.npy",
+        "sha256": "18aeb85da49df9dc7894da49caf8abf40927124373f519db327ddad6fc16f4f9",
+        "bytes": 69644928,
+        "rows": 54410,
+        "dimension": 640,
+        "catalog_sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-m-luna-50k.npy"
+      },
+      "100k": {
+        "file": "clap2-m-luna-100k.npy",
+        "sha256": "114382d02b3ae38bc62a389037e703f4b4b14067314e90b1213c71c9875f18f8",
+        "bytes": 133633408,
+        "rows": 104401,
+        "dimension": 640,
+        "catalog_sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-m-luna-100k.npy"
+      }
+    },
+    "l": {
+      "10k": {
+        "file": "clap2-l-luna-10k.npy",
+        "sha256": "4d755f5e776999a91e3b79acca530f7f2a81913edb97be50b4d2e31c5c657f8b",
+        "bytes": 27678848,
+        "rows": 14416,
+        "dimension": 960,
+        "catalog_sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-l-luna-10k.npy"
+      },
+      "50k": {
+        "file": "clap2-l-luna-50k.npy",
+        "sha256": "43a9a13c169506e57fc921be6007890ca3a6ecb702f03277f762c25d3cb7688b",
+        "bytes": 104467328,
+        "rows": 54410,
+        "dimension": 960,
+        "catalog_sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-l-luna-50k.npy"
+      },
+      "100k": {
+        "file": "clap2-l-luna-100k.npy",
+        "sha256": "ee86911f75c3904732b61231023c28af99a183c7095911e00be3eb9c37fcc45c",
+        "bytes": 200450048,
+        "rows": 104401,
+        "dimension": 960,
+        "catalog_sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+        "url": "https://github.com/LAION-AI/clap2-audio-scene-captioning/releases/download/v1.0.0/clap2-l-luna-100k.npy"
+      }
+    }
+  }
+}

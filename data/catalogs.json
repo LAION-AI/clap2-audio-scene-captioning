@@ -1,0 +1,63 @@
+{
+  "version": "v1.0.0",
+  "source_repository": "laion/laion-audio-xl-caption-cluster-library",
+  "source_revision": "e4407f1f39ecc05425c5664bb68d6d9a3fb0081c",
+  "training_model": "m",
+  "training_rows": 100000000,
+  "luna_nodes": 4416,
+  "catalogs": {
+    "10k": {
+      "rows": 14416,
+      "archetypes": 10000,
+      "requested_clusters": 10000,
+      "missing_caption_clusters_omitted": [],
+      "file": "data/candidates/luna-10k.jsonl.gz",
+      "sha256": "b37b9485e58bc51ccd6a94dc4ec90f42e479bad7f9e54a8ec1da3bbef1d53440",
+      "ordered_ids_sha256": "7ddee1028a40a8e33f66c2ce0092eb52426ea5140b20edef627b22286fa4abdf",
+      "source_file": "indexes/subset-100m/m/luna-large10k/nodes.json"
+    },
+    "50k": {
+      "rows": 54410,
+      "archetypes": 49994,
+      "requested_clusters": 50000,
+      "missing_caption_clusters_omitted": [
+        13207,
+        15786,
+        19089,
+        24179,
+        32329,
+        44150
+      ],
+      "file": "data/candidates/luna-50k.jsonl.gz",
+      "sha256": "ce7cba6fa5e5537cce168d4e3a86817a6128e8e6c232e587c8c0dbb000f522d5",
+      "ordered_ids_sha256": "c77cf516899f6aa757ff8788ea313b387b1304ca54b9ca4c2da6b578cc0a66a6",
+      "source_file": "subset-100m/m/k050000/representatives.parquet"
+    },
+    "100k": {
+      "rows": 104401,
+      "archetypes": 99985,
+      "requested_clusters": 100000,
+      "missing_caption_clusters_omitted": [
+        7514,
+        9106,
+        10742,
+        19409,
+        24704,
+        25174,
+        28227,
+        40567,
+        43295,
+        47226,
+        48669,
+        53068,
+        71677,
+        80098,
+        97670
+      ],
+      "file": "data/candidates/luna-100k.jsonl.gz",
+      "sha256": "5240dbefa32359c92209230812e6debaeee467b25c84baf5e4b8e41a059978c9",
+      "ordered_ids_sha256": "1bd1cbe978ef054f81fa25f27c54d67c74c50840e5aa163e1a1005179876ec81",
+      "source_file": "indexes/subset-100m/m/luna-large100k/nodes.json"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "duration_seconds": 600,
+  "timeline_bins": 3000,
+  "window_count": 2991,
+  "segments": 5,
+  "all_bins_have_top5": true,
+  "timing": {
+    "audio_encoding_seconds": 5.98928215901833,
+    "retrieval_and_segmentation_seconds": 1.5405745470197871,
+    "total_seconds": 7.529857513029128
+  },
+  "device": "A100 80GB",
+  "model": "m",
+  "index_candidates": 104401
+}
